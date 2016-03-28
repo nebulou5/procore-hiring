@@ -42,11 +42,12 @@ A basic persistent contact tracker.
 9. Update contact
 10. Delete contact
 11. Fine tune fulltext filtering
-12. Complete unit tests for:
+12. Cross platform/cross browser testing
+13. Complete unit tests for:
     - App Component 
     - Redux Action Creators
     - Redux Stores
     - Server Methods
-13. Refactor into standalone components:
+14. Refactor into standalone components:
     - Contact form modal
     - Icons/stacked icons
