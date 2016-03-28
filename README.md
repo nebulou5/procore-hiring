@@ -41,11 +41,12 @@ A basic persistent contact tracker.
 8. Add ascending/descending sort icons
 9. Update contact
 10. Delete contact
-11. Complete unit tests for:
+11. Fine tune fulltext filtering
+12. Complete unit tests for:
     - App Component 
     - Redux Action Creators
     - Redux Stores
     - Server Methods
-12. Refactor into standalone components:
+13. Refactor into standalone components:
     - Contact form modal
     - Icons/stacked icons
