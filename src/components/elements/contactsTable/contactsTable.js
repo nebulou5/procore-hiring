@@ -22,9 +22,9 @@ export class ContactsTable extends React.Component {
 
         <tr key={i}>
           <td>
-            { contact.firstName }
+            { contact.firstName }<span className="phoneOnly"><br/>{ contact.lastName }</span>
           </td>
-          <td>
+          <td className="phoneHidden">
             { contact.lastName }
           </td>
           <td className="phoneHidden tabletHidden">
@@ -57,11 +57,13 @@ export class ContactsTable extends React.Component {
                 this.props.sort('firstName'); 
               }}>
 
-              First Name
+              <span className="phoneHidden">First Name</span>
+              <span className="phoneOnly">Name</span>
 
             </th>
 
             <th 
+              className="phoneHidden"
               onClick={() => {
                 this.props.sort('lastName'); 
               }}>

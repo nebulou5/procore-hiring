@@ -129,6 +129,30 @@ function getTemplateHtml(config) {
             width: 100%;
           }
 
+          .homeComponent.container {
+            padding: 0;
+          }
+
+          .searchBoxComponent input {
+            box-sizing: border-box; 
+          }
+
+          @media screen and (max-width: 749px) {
+
+            .searchBoxComponent {
+              width: 100%; 
+            }
+
+            .searchBoxComponent input {
+              width: calc(100% - 35px) !important;
+            } 
+
+            .addContactsButtonWrapper .iconButtonComponent,
+            .addContactsButtonWrapper button {
+              width: 100% !important; 
+            }
+          }
+
           @media screen and (min-width: 991px) {
             .container {
               left: 50%;

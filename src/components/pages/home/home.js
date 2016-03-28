@@ -28,22 +28,35 @@ export class Home extends React.Component {
 
       <div className="homeComponent container">
 
-        <div style={{
-          marginBottom: "30px",
-          overflow: "auto"
-        }}>
+        <div 
+          style={{
+            marginBottom: "25px",
+            overflow: "auto"
+          }}>
 
-          <SearchBox 
-            filterContacts={ this.props.filterContacts }
-            style={{
-              float: "left"
-            }}/>
+          <div className="grid">
+            <div className="row">
+              <div style={{padding: "0"}} className="column phoneTwelveUnits tabletSixUnits">
+                <SearchBox 
+                  filterContacts={ this.props.filterContacts }
+                  style={{
+                    float: "left"
+                  }}/>
+              </div>
 
-          <IconButton
-            onClick={ this.props.toggleAddContactModal }
-            style={{ float: "right" }}
-            text="Contacts Keeper"
-            icon="fa fa-plus-circle"/>
+              <div 
+                style={{padding: "0", marginBottom: "0"}} 
+                className="column addContactsButtonWrapper phoneTwelveUnits tabletSixUnits">
+
+                <IconButton
+                  onClick={ this.props.toggleAddContactModal }
+                  style={{ float: "right" }}
+                  text="Contacts Keeper"
+                  icon="fa fa-plus-circle"/>
+
+              </div>
+            </div>
+          </div>
 
           <Modal
             isOpen={ this.props.modal.isOpen }
@@ -116,7 +129,7 @@ export class Home extends React.Component {
                 }}>
 
                 <div className="row">
-                  <div className="column phoneTwelveUnits tabletSixUnits">
+                  <div className="column phoneSixUnits">
                     <Input
                       id="firstName"
                       name="firstName"
@@ -124,7 +137,7 @@ export class Home extends React.Component {
                       onChange={ this.props.changeContactsFormField }
                       value={ this.props.form.firstName }/>
                   </div>     
-                  <div className="column phoneTwelveUnits tabletSixUnits">
+                  <div className="column phoneSixUnits">
                     <Input
                       id="lastName"
                       name="lastName"
@@ -135,7 +148,7 @@ export class Home extends React.Component {
                 </div>
 
                 <div className="row">
-                  <div className="column phoneTwelveUnits tabletSixUnits">
+                  <div className="column phoneSixUnits">
                     <Input
                       id="dob"
                       name="dob"
@@ -143,7 +156,7 @@ export class Home extends React.Component {
                       onChange={ this.props.changeContactsFormField }
                       value={ this.props.form.dob }/>
                   </div>     
-                  <div className="column phoneTwelveUnits tabletSixUnits">
+                  <div className="column phoneSixUnits">
                     <Input
                       id="phone"
                       name="phone"
@@ -154,7 +167,7 @@ export class Home extends React.Component {
                 </div>
 
                 <div className="row">
-                  <div className="column phoneTwelveUnits tabletSixUnits">
+                  <div className="column phoneSixUnits">
                     <Input
                       id="email"
                       name="email"
@@ -205,14 +218,18 @@ export class Home extends React.Component {
 
         </div>
 
-        <ContactsTable 
-          style={{
-            clear: "both",
-            width: "100%"
-          }}
-          sort={this.props.sortContacts}
-          filtered={this.props.filter.length > 0}
-          contacts={contacts}/>
+        <div className="grid">
+          <div className="row">
+            <ContactsTable 
+              style={{
+                clear: "both",
+                width: "100%"
+              }}
+              sort={this.props.sortContacts}
+              filtered={this.props.filter.length > 0}
+              contacts={contacts}/>
+          </div>
+        </div>
 
       </div>
     );

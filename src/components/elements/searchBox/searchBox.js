@@ -18,7 +18,7 @@ export class SearchBox extends React.Component {
             style={{
               borderRadius: "0",
               fontSize: "11px",
-              height: "30px",
+              height: "34px",
               width: "178px",
               padding: "0 12px"
             }}/>
