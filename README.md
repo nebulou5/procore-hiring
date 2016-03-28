@@ -27,7 +27,7 @@ A basic persistent contact tracker.
 4. Sort table by ascending or descending field
 5. Persists contacts to serialized cookie
 
-### Todo
+### Backlog
 
 ---
 
@@ -46,3 +46,6 @@ A basic persistent contact tracker.
     - Redux Action Creators
     - Redux Stores
     - Server Methods
+12. Refactor into standalone components:
+    - Contact form modal
+    - Icons/stacked icons
