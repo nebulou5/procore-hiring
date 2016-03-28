@@ -39,7 +39,9 @@ A basic persistent contact tracker.
 6. Rotate search hourglass icon
 7. Use react-router to remember modal state
 8. Add ascending/descending sort icons
-9. Complete unit tests for:
+9. Update contact
+10. Delete contact
+11. Complete unit tests for:
     - App Component 
     - Redux Action Creators
     - Redux Stores
