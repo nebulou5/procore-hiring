@@ -1,0 +1,22 @@
+@phoneMin: 0px;
+@tabletMin: 750px;
+@smallDesktopMin: 991px;
+@largeDesktopMin: 1199px;
+@superLargeDesktopMin: 1399px;
+
+@smallPhoneMax: 375px;
+@phoneMax: (@tabletMin - 1);
+@tabletMax: (@smallDesktopMin - 1);
+@smallDesktopMax: (@largeDesktopMin - 1);
+
+@atMostSmallPhone: ~"only screen and (max-width: @{smallPhoneMax})";
+@atMostPhone: ~"only screen and (max-width: @{phoneMax})";
+@atLeastPhone: ~"only screen and (min-width: @{phoneMin})";
+@atLeastTablet: ~"only screen and (min-width: @{tabletMin})";
+@atLeastSmallDesktop: ~"only screen and (min-width: @{smallDesktopMin})";
+
+@phone: ~"only screen and (min-width: @{phoneMin}) and (max-width: @{phoneMax})";
+@tablet: ~"only screen and (min-width: @{tabletMin}) and (max-width: @{tabletMax})";
+@smallDesktop: ~"only screen and (min-width: @{smallDesktopMin}) and (max-width: @{smallDesktopMax})";
+@largeDesktop: ~"only screen and (min-width: @{largeDesktopMin})";
+@superLargeDesktop: ~"only screen and (min-width: @{superLargeDesktopMin})";

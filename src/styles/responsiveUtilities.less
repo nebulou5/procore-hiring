@@ -1,0 +1,41 @@
+@import "./mediaQueries.less";
+
+@media @phone {
+
+  .phoneHidden,
+  .tabletOnly,
+  .smallDesktopOnly,
+  .largeDesktopOnly {
+    display: none !important;
+  }
+}
+
+@media @tablet {
+
+  .phoneOnly,
+  .tabletHidden,
+  .smallDesktopOnly,
+  .largeDesktopOnly {
+    display: none !important;
+  }
+}
+
+@media @smallDesktop {
+
+  .phoneOnly,
+  .tabletOnly,
+  .smallDesktopHidden,
+  .largeDesktopOnly {
+    display: none !important;
+  }
+}
+
+@media @largeDesktop {
+
+  .phoneOnly,
+  .tabletOnly,
+  .smallDesktopOnly,
+  .largeDesktopHidden {
+    display: none !important;
+  }
+}

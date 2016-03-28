@@ -1,0 +1,76 @@
+@import "./mediaQueries.less";
+@defaultMargin: 25px;
+
+.row, .column {
+  box-sizing: border-box;
+}
+
+.row {
+  display: block;
+  clear: both;
+  position: relative;
+  overflow: visible;
+  padding: 0 (@defaultMargin / 2);
+}
+
+.column {
+  padding: 0 (@defaultMargin / 2);
+  float: left;
+  margin: (@defaultMargin / 2) auto;
+}
+
+.generateColumns(@name, @mediaQuery) {
+ 
+  @media @mediaQuery {
+    .@{name}OneUnit {
+      width: 8.33%;
+    }
+    .@{name}TwoUnits {
+      width: 16.66%;
+    }
+    .@{name}ThreeUnits {
+      width: 25%;
+    }
+    .@{name}FourUnits {
+      width: 33.33%;
+    }
+    .@{name}FiveUnits {
+      width: 41.66%;
+    }
+    .@{name}SixUnits {
+      width: 50%;
+    }
+    .@{name}SevenUnits {
+      width: 58.33%;
+    }
+    .@{name}EightUnits {
+      width: 66.66%;
+    }
+    .@{name}NineUnits {
+      width: 75%;
+    }
+    .@{name}TenUnits {
+      width: 83.33%;
+    }
+    .@{name}ElevenUnits {
+      width: 91.66%;
+    }
+    .@{name}TwelveUnits {
+      width: 100%;
+    }
+  }
+}
+
+.generateColumns(phone, @atLeastPhone);
+.generateColumns(tablet, @atLeastTablet);
+.generateColumns(smallDesktop, @atLeastSmallDesktop);
+.generateColumns(largeDesktop, @largeDesktop);
+
+.grid {
+  width: 100%;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
