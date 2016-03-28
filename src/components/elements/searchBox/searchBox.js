@@ -16,6 +16,7 @@ export class SearchBox extends React.Component {
               this.props.filterContacts(e.target.value)
             }}
             style={{
+              borderRadius: "0",
               fontSize: "11px",
               height: "30px",
               width: "178px",
