@@ -10,7 +10,6 @@ export class Wrapper extends React.Component {
       background: "#f58025",
       borderBottom: "20px solid #e7e7e7",
       height: "38px",
-      marginBottom: "50px",
       padding: "27px 0 0 0"
     };
 

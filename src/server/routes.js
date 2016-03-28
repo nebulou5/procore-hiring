@@ -153,6 +153,16 @@ function getTemplateHtml(config) {
             }
           }
 
+          .wrapperComponent > header {
+            margin-bottom: 12px; 
+          }
+
+          @media screen and (min-width: 750px) {
+            .wrapperComponent > header {
+              margin-bottom: 22px;
+            }
+          }
+
           @media screen and (min-width: 991px) {
             .container {
               left: 50%;
