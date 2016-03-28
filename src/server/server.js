@@ -3,7 +3,7 @@ import addRoutes from './routes.js';
 
 const framework = new FrameworkStrategy.express({
   http: {
-    port: 80 
+    port: process.env.PORT || 80 
   }
 });
 
