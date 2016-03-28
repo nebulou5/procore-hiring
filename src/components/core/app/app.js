@@ -9,7 +9,6 @@ import routes from '../../../config/routes';
 import * as actionCreators from '../../../flux/actionCreators/actionCreators';
 import '../../../styles/grid.less';
 import '../../../styles/responsiveUtilities.less';
-import '../../pages/home/home.less';
 
 const store = initializeStore();
 
