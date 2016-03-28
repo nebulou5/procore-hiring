@@ -41,7 +41,4 @@ describe('ContactsTable', () => {
     expect(isDOMComponent(rootElement)).to.equal(true);
   });
 
-  it('renders table of passed contacts', () => {
-    const component = renderIntoDocument(getComponent());
-  });
 });

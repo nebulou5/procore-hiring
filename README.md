@@ -48,6 +48,9 @@ A basic persistent contact tracker.
     - Redux Action Creators
     - Redux Stores
     - Server Methods
+    - ContactsTable Rendering
 14. Refactor into standalone components:
     - Contact form modal
     - Icons/stacked icons
+15. Add propTypes
+16. Refactor server side getTemplateHtml() into module
