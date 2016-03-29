@@ -85,6 +85,7 @@ function getTemplateHtml(config) {
 
           body {
             font-family: sans-serif; 
+            -webkit-text-size-adjust: none;
           }
 
           html, body, div, span, applet, object, iframe,
