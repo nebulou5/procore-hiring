@@ -44,39 +44,32 @@ export class ContactsTable extends React.Component {
     });
 
     return (
-      <table { ...this.props } className="contactsTableComponent">
+      <table className="contactsTableComponent" { ...this.props }>
         
-        <thead style={{
-          background: "#676767",
-          color: "#fff"
-        }}>
+        <thead 
+          style={{
+            background: "#676767",
+            color: "#fff"
+          }}>
+
           <tr>
 
-            <th 
-              onClick={() => {
-                this.props.sort('firstName'); 
-              }}>
-
+            <th onTouchTap={() => this.props.sort('firstName')}>
               <span className="phoneHidden">First Name</span>
               <span className="phoneOnly">Name</span>
-
             </th>
 
             <th 
-              className="phoneHidden"
-              onClick={() => {
-                this.props.sort('lastName'); 
-              }}>
+              className="phoneHidden" 
+              onTouchTap={() => this.props.sort('lastName')}>
 
               Last Name
-
+              
             </th>
 
             <th 
               className="phoneHidden tabletHidden"
-              onClick={() => {
-                this.props.sort('dob') 
-              }}>
+              onTouchTap={() => this.props.sort('dob')}>
 
               Date of Birth
 
@@ -84,33 +77,23 @@ export class ContactsTable extends React.Component {
 
             <th 
               className="phoneHidden"
-              onClick={() => {
-                this.props.sort('phone');
-              }}>
+              onTouchTap={() => this.props.sort('phone')}>
               
               Phone
 
             </th>
 
-            <th
-              onClick={() => {
-                this.props.sort('email'); 
-              }}>
-
+            <th onTouchTap={() => this.props.sort('email')}>
               Email<span className="phoneOnly">/Phone</span>
-
             </th>
 
             <th 
               className="phoneHidden tabletHidden"
-              onClick={() => {
-                this.props.sort('notes'); 
-              }}>
+              onTouchTap={() => this.props.sort('notes')}>
 
               Notes
 
             </th>
-
           </tr>
         </thead>
        
