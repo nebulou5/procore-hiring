@@ -46,7 +46,6 @@ A basic persistent contact tracker.
 13. Complete unit tests for:
     - App Component 
     - Redux Action Creators
-    - Redux Reducers
     - Redux Stores
     - Server Methods
     - ContactsTable Rendering
